@@ -35,10 +35,10 @@ export default function roadmap() {
 			<div className="min-h-screen h-fit relative">
 				<div className="absolute -z-10 h-full w-full bg-blend-darken">
                     <Image
-						priority
                         src="/roadmap/rdmpbg.jpg"
                         layout="fill"
                         objectFit="cover"
+						priority
                         quality={100}
 						alt="roadmap background image"
 						loading="eager"
@@ -157,6 +157,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 5"
+											priority
 										/>
 									</div>
 								</div>
@@ -172,6 +173,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 6"
+											priority
 										/>
 									</div>
 									<div className="right-div bg-[#32323a] rounded-2xl min-w-[400px] w-[400px] min-h-[150px] h-fit shadow-lg shadow-slate-900">
@@ -197,6 +199,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 7"
+											priority
 										/>
 									</div>
 								</div>
@@ -212,6 +215,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 8"
+											priority
 										/>
 									</div>
 									<div className="right-div bg-[#32323a] rounded-2xl min-w-[400px] w-[400px] min-h-[150px] h-fit shadow-lg shadow-slate-900">
@@ -337,6 +341,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 6"
+											priority
 										/>
 									</div>
 								</div>
@@ -350,6 +355,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 7"
+											priority
 										/>
 									</div>
 									<div className="left-div bg-[#32323a] rounded-2xl min-w-[400px] w-[400px] xsm:w-[300px] min-h-[150px] h-fit shadow-2xl shadow-slate-900 xsm:min-w-[300px]">
@@ -373,6 +379,7 @@ export default function roadmap() {
 											layout="fill"
 											objectFit="contain"
 											alt="roadmap image 8"
+											priority
 										/>
 									</div>
 								</div>
