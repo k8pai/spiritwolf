@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://spiritwolf.io
+
+# Sitemaps
+Sitemap: https://spiritwolf.io/sitemap.xml
