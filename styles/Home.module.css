@@ -1,0 +1,28 @@
+
+.inactiveNav{
+    min-height: 100vh;
+    min-width: fit-content;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-100%, 0%);
+}
+.activeNav{
+    min-height: 100vh;
+    min-width: fit-content;
+    transition: all .3s ease-in-out;
+    display: flex;
+    pointer-events: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 0%;
+    transform: translate(0%, 0%);
+    background: rgba(33, 4, 51, .4);
+}
