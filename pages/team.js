@@ -42,8 +42,8 @@ export default function Team() {
 							<div className="main-team-header text-center my-6">
 								<h1 className="text-4xl font-fjalla tracking-widest text-slate-100 uppercase font-bold">main Team</h1>
 							</div>
-							<div className="2xl:max-w-[1200px] xl:max-w-[1200px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+							<div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[850px] md:max-w-[600px] sm:max-w-[400px] xsm:max-w-[400px] mx-auto flex justify-center items-start flex-wrap place-content-center place-items-center">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -65,7 +65,7 @@ export default function Team() {
 										</div>
 									</div>
 								</div>
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -87,7 +87,7 @@ export default function Team() {
 										</div>
 									</div>
 								</div>
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -101,10 +101,10 @@ export default function Team() {
 										</div>
 										<div className="flex-col pl-6">
 											<div className="headData">
-												<h3 className="text-2xl font-fjalla tracking-wider capitalize">Pai</h3>
+												<h3 className="text-2xl font-fjalla tracking-wider">k8pai</h3>
 											</div>
 											<div className="addData">
-												<div className="text-slate-200 tracking-wider capitalize">&lt;Dev /&gt;</div>
+												<div className="text-slate-200 tracking-wider capitalize">Dev <span className="font-semibold">&lt; /&gt;</span></div>
 											</div>
 											<div className="linkData mt-2">
 												<Link href="https://twitter.com/k8pai">
@@ -121,8 +121,8 @@ export default function Team() {
 							<div className="main-team-header text-center my-6">
 								<h1 className="text-4xl font-fjalla text-slate-100 uppercase font-bold">core team</h1>
 							</div>
-							<div className="2xl:max-w-[800px] xl:max-w-[800px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col  mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+							<div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[850px] md:max-w-[600px] sm:max-w-[400px] xsm:max-w-[400px] mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -149,7 +149,7 @@ export default function Team() {
 										</div>
 									</div>
 								</div>
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -183,8 +183,8 @@ export default function Team() {
 							<div className="main-team-header text-center my-6">
 								<h1 className="text-4xl font-fjalla text-slate-100 uppercase font-bold">Collab Managers</h1>
 							</div>
-							<div className="2xl:max-w-[1200px] xl:max-w-[1200px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+							<div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[850px] md:max-w-[600px] sm:max-w-[400px] xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -203,15 +203,15 @@ export default function Team() {
 											<div className="addData">
 												<div className="text-slate-200 tracking-wider capitalize">Collab Manager</div>
 											</div>
-											<div className="linkData mt-2">
+											{/* <div className="linkData mt-2">
 												<Link href="/">
 													<svg className="mx-0 transition fill-slate-200 duration-200 hover:fill-[#1DA1F2] cursor-pointer" role="img" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
 												</Link>
-											</div>
+											</div> */}
 										</div>
 									</div>
 								</div>
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -238,7 +238,7 @@ export default function Team() {
 										</div>
 									</div>
 								</div>
-								<div className="card rounded-lg p-6 shadow-xl transition duration-300 flex-1 w-[100%] hover:border-blue-400 m-2">
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
 									<div className="text-slate-50 flex items-start xsm:flex-col">
 										<div className="imageclass xsm:mx-auto">
 											<Image
@@ -259,6 +259,60 @@ export default function Team() {
 											</div>
 											<div className="linkData mt-2">
 												<Link href="https://twitter.com/PunksopS">
+													<svg className="mx-0 transition fill-slate-200 duration-200 hover:fill-[#1DA1F2] cursor-pointer" role="img" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+												</Link>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
+									<div className="text-slate-50 flex items-start xsm:flex-col">
+										<div className="imageclass xsm:mx-auto">
+											<Image
+												className="rounded-full"
+												src="/teams/rohith.jpg"
+												height="100"
+												width="100"
+												alt="rohith image"
+												priority
+											/>
+										</div>
+										<div className="flex-col pl-6">
+											<div className="headData">
+												<h3 className="text-2xl font-fjalla tracking-wider capitalize">Rohith</h3>
+											</div>
+											<div className="addData">
+												<div className="text-slate-200 tracking-wider capitalize">Collab Manager</div>
+											</div>
+											<div className="linkData mt-2">
+												<Link href="https://twitter.com/Rohit2356_">
+													<svg className="mx-0 transition fill-slate-200 duration-200 hover:fill-[#1DA1F2] cursor-pointer" role="img" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+												</Link>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="card rounded-lg p-6 shadow-xl transition duration-300 min-w-[400px] xsm:min-w-[300px] hover:border-blue-400 m-2">
+									<div className="text-slate-50 flex items-start xsm:flex-col">
+										<div className="imageclass xsm:mx-auto">
+											<Image
+												className="rounded-full"
+												src="/teams/ambuj.jpg"
+												height="100"
+												width="100"
+												alt="ambuj image"
+												priority
+											/>
+										</div>
+										<div className="flex-col pl-6">
+											<div className="headData">
+												<h3 className="text-2xl font-fjalla tracking-wider capitalize">Ambuj</h3>
+											</div>
+											<div className="addData">
+												<div className="text-slate-200 tracking-wider capitalize">Collab Manager</div>
+											</div>
+											<div className="linkData mt-2">
+												<Link href="https://twitter.com/solambuj">
 													<svg className="mx-0 transition fill-slate-200 duration-200 hover:fill-[#1DA1F2] cursor-pointer" role="img" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
 												</Link>
 											</div>
