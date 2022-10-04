@@ -13,7 +13,7 @@ export default function MemberCard(props) {
                             src={props.member.imgUrl}
                             layout="fill"
                             objectFit="contain"
-                            alt="setuk image"
+                            alt={props.member.imgAlt}
                             priority
                         />
                     </motion.div>
@@ -38,7 +38,7 @@ export default function MemberCard(props) {
                             src={props.member.imgUrl}
                             layout="fill"
                             objectFit="contain"
-                            alt="setuk image"
+                            alt={props.member.imgAlt}
                             priority
                         />
                     </motion.div>

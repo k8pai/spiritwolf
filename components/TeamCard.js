@@ -29,7 +29,9 @@ export default function TeamCard(props) {
         <div className="2xl:max-w-[1600px] xl:max-w-[1200px] lg:max-w-[850px] md:max-w-[600px] sm:max-w-[400px] xsm:max-w-[400px] mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
             {props.memb.map((members) => {
                 return (
-                    <MemberCard member={members} />
+                    <div key={members.id}>
+                        <MemberCard member={members} />
+                    </div>
                 );
             })}
         </div>

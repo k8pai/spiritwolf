@@ -42,6 +42,7 @@ export default function Team() {
 		},
 		mainteams: [
 			{
+				id: 1,
 				name: 'Jakez',
 				imgUrl: '/teams/jakez.jpg',
 				imgAlt: 'Jakez team image.',
@@ -49,6 +50,7 @@ export default function Team() {
 				twtUrl: 'null',
 			},
 			{
+				id: 2,
 				name: 'Minato',
 				imgUrl: '/teams/minato.jpg',
 				imgAlt: 'Minato team image.',
@@ -56,6 +58,7 @@ export default function Team() {
 				twtUrl: 'null',
 			},
 			{
+				id: 3,
 				name: 'k8pai',
 				imgUrl: '/teams/pai.jpg',
 				imgAlt: 'k8pai team image.',
@@ -65,6 +68,7 @@ export default function Team() {
 		],
 		coreteams: [
 			{
+				id: 1,
 				name: 'Setuk',
 				imgUrl: '/teams/setuk.jpg',
 				imgAlt: 'Setuk team image.',
@@ -72,6 +76,7 @@ export default function Team() {
 				twtUrl: 'https://twitter.com/setukation',
 			},
 			{
+				id: 2,
 				name: 'VPM',
 				imgUrl: '/teams/vpm.jpg',
 				imgAlt: 'VPM team image.',
@@ -81,6 +86,7 @@ export default function Team() {
 		],
 		collabteams: [
 			{
+				id: 1,
 				name: 'Ambuj',
                 imgUrl: '/teams/ambuj.jpg',
                 imgAlt: 'Ambuj team image.',
@@ -88,6 +94,7 @@ export default function Team() {
                 twtUrl: 'https://twitter.com/solambuj',
             },
             {
+				id: 2,
 				name: 'Rohith',
                 imgUrl: '/teams/rohith.jpg',
                 imgAlt: 'Rohith team image.',
@@ -95,6 +102,7 @@ export default function Team() {
                 twtUrl: 'https://twitter.com/Rohit2356',
             },
             {
+				id: 3,
 				name: 'Punksop',
                 imgUrl: '/teams/punksop.jpg',
                 imgAlt: 'Punksop team image.',
@@ -102,6 +110,7 @@ export default function Team() {
                 twtUrl: 'https://twitter.com/PunksopS',
             },
             {
+				id: 4,
                 name: 'Helblindi',
                 imgUrl: '/teams/helblindi.jpg',
                 imgAlt: 'Helblindi team image.',
@@ -109,6 +118,7 @@ export default function Team() {
                 twtUrl: 'null',
             },
             {
+				id: 5,
 				name: 'Hayat',
                 imgUrl: '/teams/hayat.jpg',
                 imgAlt: 'Hayat team image.',
