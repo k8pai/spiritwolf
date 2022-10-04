@@ -38,9 +38,9 @@ export default function Home() {
 			</Head>
 			<div className="h-screen">
 				<div className="absolute">
-					<video className="aspect-video -z-10 w-screen h-screen object-cover" autoPlay loop muted playsInline>
-						<source src="/spbgnrml.mp4" alt="varcity jacket video" />
-					</video>
+					<video src="/spbgnrml.mp4" className="aspect-video -z-10 w-screen h-screen object-cover" autoPlay loop muted />
+						{/* <source src="https://spiritwolf.io/spbgnrml.mp4" alt="varcity jacket video" /> */}
+					{/* </video> */}
 				</div>
 				<main className="h-full w-full relative">
 					<nav className="w-screen h-full p-2 relative">
