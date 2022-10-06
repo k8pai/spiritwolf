@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container } from "postcss";
 import { useState } from "react";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 export default function Home() {
@@ -42,6 +43,7 @@ export default function Home() {
 						{/* <source src="https://spiritwolf.io/spbgnrml.mp4" alt="varcity jacket video" /> */}
 					{/* </video> */}
 				</div>
+				{/* <Header /> */}
 				<main className="h-full w-full relative">
 					<nav className="w-screen h-full p-2 relative">
 						<div className="mobnav z-auto absolute top-0 left-0 w-full h-screen bg-transparent pointer-events-none lg:hidden xl:hidden 2xl:hidden">

@@ -6,8 +6,50 @@ import { Container } from "postcss";
 import { useRef, useEffect } from "react";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer";
+import { motion } from "framer-motion";
+import AboutCard from "../../components/aboutCard";
+import gsap from "gsap"
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+
+	const container = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: .2,
+			}
+		}
+	}
+	const items = {
+		hidden: {
+			opacity: 0, y: 20,
+		},
+		show: {
+			opacity: 1, y: 0, transition: {
+				duration: .5, type: "spring", stiffness: 100, bounce: 1, damping: 8,
+			}
+		}
+
+	}
+
+	const abtHead1 = useRef(null)
+	const abtHead2 = useRef(null)
+	const abtHead3 = useRef(null)
+	useEffect(() => {
+		const el1 = abtHead1.current;
+		const el2 = abtHead2.current;
+		const el3 = abtHead3.current;
+		gsap.fromTo(el1, {opacity: 0, y:85},{opacity: 1, y:0, delay: .1, duration: .6, scrollTrigger: { trigger: el1 }}),
+		gsap.fromTo(el2, {opacity: 0, y:85},{opacity: 1, y:0, delay: .2, duration: .6, scrollTrigger: { trigger: el2 }}),
+		gsap.fromTo(el3, {opacity: 0, y:85},{opacity: 1, y:0, delay: .3, duration: .6, scrollTrigger: { trigger: el3 }})
+	}, [])
+
+
 	return (
 		<>
 			<Head>
@@ -50,21 +92,22 @@ export default function About() {
 				<main className="">
 					<Header />
 					<section className="TeamsSection -z-0 relative w-[100%] min-h-full flex-col justify-center items-center mx-auto">
-						<div className="select-none w-[70%] mx-auto py-[100px]">
-							<div className="main-team-header font-fjalla text-center">
-								<h1 className="text-6xl text-slate-100 uppercase leading-normal font-bold tracking-widest sm:text-4xl xsm:text-3xl">spiritwolf nft</h1>
-								<h1 className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">SpiritWolf is building a brand-centric project, primarily focusing on building a streetwear brand, which will be fueled by the Alpha Wolf Holders of our community. Our brand will be predominantly venturing into web2 after our web3 brand launch as a genesis NFT collection on Solana.</h1>
-								<h1 className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">These ventures will include seasonal streetwear collection drops during &quot;Full Moon&quot;. Also, we will be coming up with a Streetwear Marketplace, and we&apos;ll be hosting, and showing up at a ton of streetwear meet-ups! Our Alpha Wolves are also showered with web3 utilities, which come under our Full Moon Air Drops.</h1>
-								<h1 className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">These Air Drops you can burn to redeem your web2 collectible. Be the ALPHA WOLF  Holder and enjoy the benefits. Hopefully, we can meet you wolves IRL at one of our events!</h1>
-							</div>
+						<div className="select-none w-[70%] mx-auto py-[150px]">
+							<motion.div variants={container} initial={"hidden"} animate={"show"} className="main-team-header font-fjalla text-center">
+								<motion.h1 variants={items} className="text-6xl text-slate-100 uppercase leading-normal font-bold tracking-widest sm:text-4xl xsm:text-3xl">spiritwolf nft</motion.h1>
+								<motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">SpiritWolf is building a brand-centric project, primarily focusing on building a streetwear brand, which will be fueled by the Alpha Wolf Holders of our community. Our brand will be predominantly venturing into web2 after our web3 brand launch as a genesis NFT collection on Solana.</motion.h1>
+								<motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">These ventures will include seasonal streetwear collection drops during &quot;Full Moon&quot;. Also, we will be coming up with a Streetwear Marketplace, and we&apos;ll be hosting, and showing up at a ton of streetwear meet-ups! Our Alpha Wolves are also showered with web3 utilities, which come under our Full Moon Air Drops.</motion.h1>
+								<motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize tracking-wider leading-relaxed font-normal sm:text-xl xsm:text-lg">These Air Drops you can burn to redeem your web2 collectible. Be the ALPHA WOLF  Holder and enjoy the benefits. Hopefully, we can meet you wolves IRL at one of our events!</motion.h1>
+							</motion.div>
 						</div>
 
 						<div className="pt-[50px] select-none">
-							<div className="main-team-header text-center my-6">
-								<h1 className="text-4xl text-slate-100 uppercase font-fjalla font-bold tracking-widest sm:text-3xl xsm:text-2xl">Holder Benefits</h1>
-							</div>
+							<motion.div variants={container} initial={"hidden"} animate={"show"} className="main-team-header text-center my-6">
+								<motion.h1 initial={{opacity: 0, y: 20,}} animate={{opacity: 1, y: 0, transition: { delay: .75, duration: .5, type: "spring", stiffness: 100, bounce: 1, damping: 8 } }} className="text-4xl text-slate-100 uppercase font-fjalla font-bold tracking-widest sm:text-3xl xsm:text-2xl">Holder Benefits</motion.h1>
+							</motion.div>
+							{/* <AboutCard /> */}
 							<div className="2xl:max-w-[1400px] xl:max-w-[1400px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								<div className="group flex-col justify-center m-4 text-slate-50">
+								<div className="group flex-col justify-center m-4 text-slate-50" ref={abtHead1}>
 									<Link className="streetwear" href='/about/streetwear'>
 										<div className="card cursor-pointer border-2 border-slate-400 group-hover:border-[#22d3ee] rounded-lg transition duration-300 flex-1 shadow-2xl shadow-slate-900">
 											<div className="flex justify-center items-center xsm:flex-col">
@@ -97,7 +140,7 @@ export default function About() {
 										</div>
 									</Link>
 								</div>
-								<div className="group flex-col justify-center m-4">
+								<div className="group flex-col justify-center m-4" ref={abtHead2}>
 									<Link className="fullmoon" href='/about/fullmoon'>
 										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] shadow-2xl shadow-slate-900">
 											<div className="flex justify-center items-center xsm:flex-col">
@@ -130,7 +173,7 @@ export default function About() {
 										</div>
 									</Link>
 								</div>
-								<div className="group flex-col justify-center m-4">
+								<div className="group flex-col justify-center m-4" ref={abtHead3}>
 									<Link className="marketplace" href='/about/marketplace'>
 										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] shadow-2xl shadow-slate-900">
 											<div className="flex justify-center items-center xsm:flex-col card-hover:text-[#22d3ee]">
