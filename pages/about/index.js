@@ -14,6 +14,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
 
+	const card = [
+		{
+			cDly: ".5",
+			cLink: "/about/streetwear",
+			cImg: "/images/streetwear.jpg",
+			cAlt: "Street wear picture.",
+			cHead: "Streetwear Brand",
+			cCont: "Streetwear Brand In Building",
+		},
+		{
+			cDly: "1",
+			cLink: "/about/fullmoon",
+			cImg: "/images/airdrop.jpg",
+			cAlt: "airdrop picture.",
+			cHead: "FullMoon Airdrop",
+			cCont: "Rewards And Airdrops On FullMoon",
+		},
+		{
+			cDly: "1.5",
+			cLink: "/about/marketplace",
+			cImg: "/images/marketplace.jpg",
+			cAlt: "marketplace picture.",
+			cHead: "Streetwear Marketplace",
+			cCont: "Whats more about Marketplace",
+		},
+	]
+	
+
 	const container = {
 		hidden: {
 			opacity: 0,
@@ -21,7 +49,7 @@ export default function About() {
 		show: {
 			opacity: 1,
 			transition: {
-				staggerChildren: .2,
+				staggerChildren: .1,
 			}
 		}
 	}
@@ -34,20 +62,7 @@ export default function About() {
 				duration: .5, type: "spring", stiffness: 100, bounce: 1, damping: 8,
 			}
 		}
-
 	}
-
-	const abtHead1 = useRef(null)
-	const abtHead2 = useRef(null)
-	const abtHead3 = useRef(null)
-	useEffect(() => {
-		const el1 = abtHead1.current;
-		const el2 = abtHead2.current;
-		const el3 = abtHead3.current;
-		gsap.fromTo(el1, {opacity: 0, y:85},{opacity: 1, y:0, delay: .1, duration: .6, scrollTrigger: { trigger: el1 }}),
-		gsap.fromTo(el2, {opacity: 0, y:85},{opacity: 1, y:0, delay: .2, duration: .6, scrollTrigger: { trigger: el2 }}),
-		gsap.fromTo(el3, {opacity: 0, y:85},{opacity: 1, y:0, delay: .3, duration: .6, scrollTrigger: { trigger: el3 }})
-	}, [])
 
 
 	return (
@@ -105,107 +120,12 @@ export default function About() {
 							<motion.div variants={container} initial={"hidden"} animate={"show"} className="main-team-header text-center my-6">
 								<motion.h1 initial={{opacity: 0, y: 20,}} animate={{opacity: 1, y: 0, transition: { delay: .75, duration: .5, type: "spring", stiffness: 100, bounce: 1, damping: 8 } }} className="text-4xl text-slate-100 uppercase font-fjalla font-bold tracking-widest sm:text-3xl xsm:text-2xl">Holder Benefits</motion.h1>
 							</motion.div>
-							{/* <AboutCard /> */}
 							<div className="2xl:max-w-[1400px] xl:max-w-[1400px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								<div className="group flex-col justify-center m-4 text-slate-50" ref={abtHead1}>
-									<Link className="streetwear" href='/about/streetwear'>
-										<div className="card cursor-pointer border-2 border-slate-400 group-hover:border-[#22d3ee] rounded-lg transition duration-300 flex-1 shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col">
-												<div className="flex-col text-center">
-													<div className="imgData relative w-[380px] xsm:w-[300px] h-[380px] xsm:h-[300px]">
-														<Image
-															src={"/images/streetwear.jpg"}
-															layout="fill"
-															objectFit="cover"
-															quality={100}
-															alt="Street wear picture."
-														/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-									<Link className="streetwear" href='/about/streetwear'>
-										<div className="card cursor-pointer border-2 border-slate-400 rounded-lg p-6 transition duration-150 flex-1 w-[100%] hover:opacity-90 group-hover:border-[#22d3ee] group-hover:text-[#22d3ee] mt-4 shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col">
-												<div className="flex-col text-center">
-													<div className="headData">
-														<h3 className="text-2xl font-fjalla tracking-wide capitalize sm:text-xl xsm:text-xl">Streetwear Brand</h3>
-													</div>
-													<div className="addData pt-3">
-														<div className="capitalize tracking-wide sm:text-md xsm:text-md">Streetwear Brand In Building.</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-								</div>
-								<div className="group flex-col justify-center m-4" ref={abtHead2}>
-									<Link className="fullmoon" href='/about/fullmoon'>
-										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col">
-												<div className="flex-col text-center">
-													<div className="imgData relative w-[380px] xsm:w-[300px] h-[380px] xsm:h-[300px]">
-														<Image
-															src={"/images/airdrop.jpg"}
-															layout="fill"
-															objectFit="cover"
-															quality={100}
-															alt="airdrop picture."
-														/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-									<Link className="fullmoon" href='/about/fullmoon'>
-										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg p-6 transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] group-hover:text-[#22d3ee] mt-4 shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col">
-												<div className="flex-col text-center">
-													<div className="headData">
-														<h3 className="text-2xl font-fjalla tracking-wide capitalize sm:text-xl xsm:text-xl">FullMoon Airdrop</h3>
-													</div>
-													<div className="addData pt-3">
-														<div className="tracking-wide capitalize sm:text-md xsm:text-md">Rewards And Airdrops On FullMoon</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-								</div>
-								<div className="group flex-col justify-center m-4" ref={abtHead3}>
-									<Link className="marketplace" href='/about/marketplace'>
-										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col card-hover:text-[#22d3ee]">
-												<div className="flex-col text-center">
-													<div className="imgData relative w-[380px] xsm:w-[300px] h-[380px] xsm:h-[300px]">
-														<Image
-															src={"/images/marketplace.jpg"}
-															layout="fill"
-															objectFit="cover"
-															quality={100}
-															alt="marketplace picture."
-														/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-									<Link className="marketplace" href='/about/marketplace'>
-										<div className="card cursor-pointer border-2 border-slate-400 text-slate-50 rounded-lg p-6 transition duration-300 flex-1 w-[100%] group-hover:border-[#22d3ee] group-hover:text-[#22d3ee] mt-4 shadow-2xl shadow-slate-900">
-											<div className="flex justify-center items-center xsm:flex-col card-hover:text-[#22d3ee]">
-												<div className="flex-col text-center">
-													<div className="headData">
-														<h3 className="text-2xl font-fjalla tracking-wide capitalize sm:text-xl xsm:text-xl">Streetwear Marketplace</h3>
-													</div>
-													<div className="addData pt-3">
-														<div className="tracking-wide capitalize sm:text-md xsm:text-md">Whats more about Marketplace</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</Link>
-								</div>
+								{card.map((cards) => {
+									return (
+										<AboutCard  prp={cards} />
+									)
+								})}
 							</div>
 						</div>
 					</section>

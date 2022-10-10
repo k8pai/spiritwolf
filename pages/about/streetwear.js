@@ -3,8 +3,20 @@ import Link from "next/link";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer";
 import Head from "next/head";
+import { Container } from "postcss";
+import { motion } from "framer-motion";
 
 export default function streetwear() {
+
+    const container = {
+        hidden:{opacity: 0,},
+        show:{opacity:1, transition:{ staggerChildren: .1,} },
+    }
+    const items = {
+        hidden:{ opacity: 0, y:20, },
+        show:{ opacity: 1, y: 0, transition:{ type: "bounce", stiffness: 100, bounce: .5}}
+    }
+
     return (
         <>
             <Head>
@@ -36,17 +48,17 @@ export default function streetwear() {
                 <main className="relative min-h-screen h-full flex flex-col justify-between">
                     <Header />
                     <section className="TeamsSection -z-0 relative w-[100%] min-h-full flex-col justify-center items-center mx-auto">
-                        <div className="min-w-screen w-full flex lg:flex-col md:flex-col sm:flex-col xsm:flex-col">
-                            <div className="basis-2/3 select-none w-[90%] mx-auto px-[50px] pt-[100px]">
-                                <div className="main-team-header font-fjalla tracking-widest text-left">
-                                    <h1 className="text-6xl text-slate-100 uppercase leading-normal font-bold tracking-wider sm:text-4xl xsm:text-3xl">Building a Streetwear Brand</h1>
-                                    <h1 className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">Spirit Wolf will be building a streetwear brand influenced by Off-White and Supreme. We&apos;ll be dropping seasonal limited merch drops. But the good sh** will be only accessible for our Alpha Wolf Holder!</h1>
-                                    <h1 className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">Our flagship merch, which will be the face of that particular drop, will be only available for our Alpha Wolf Holders! By doing this we&apos;re promoting reselling among our community, and if they don&apos;t have any connection to sell the merch, don&apos;t worry! We already have a STREETWEAR MARKETPLACE for it!</h1>
-                                    <h1 className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">For our 1st drop, our Flagship Items will be Varsity Jackets, materials identical to that of luxury brands like Louis Vuitton & Versace. There will be other accessories and apparels dropping with our flagship varsity jackets too!</h1>
-                                    <h1 className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">And you guess it right. This first drop will be on a FULL MOON.</h1>
-                                </div>
+                        <div className="min-w-screen w-full flex items-center lg:flex-col md:flex-col sm:flex-col xsm:flex-col">
+                            <div className="basis-2/3 select-none w-[90%] mx-auto px-[50px] xsm:px-[5px] xsm:mt-[100px]">
+                                <motion.div variants={container} initial={"hidden"} animate={"show"} className="main-team-header font-fjalla tracking-widest text-left">
+                                    <motion.h1 variants={items} className="text-6xl text-slate-100 uppercase leading-normal font-bold tracking-wider sm:text-4xl xsm:text-3xl">Building a Streetwear Brand</motion.h1>
+                                    <motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">Spirit Wolf will be building a streetwear brand influenced by Off-White and Supreme. We&apos;ll be dropping seasonal limited merch drops. But the good sh** will be only accessible for our Alpha Wolf Holder!</motion.h1>
+                                    <motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">Our flagship merch, which will be the face of that particular drop, will be only available for our Alpha Wolf Holders! By doing this we&apos;re promoting reselling among our community, and if they don&apos;t have any connection to sell the merch, don&apos;t worry! We already have a STREETWEAR MARKETPLACE for it!</motion.h1>
+                                    <motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">For our 1st drop, our Flagship Items will be Varsity Jackets, materials identical to that of luxury brands like Louis Vuitton & Versace. There will be other accessories and apparels dropping with our flagship varsity jackets too!</motion.h1>
+                                    <motion.h1 variants={items} className="text-2xl pt-[25px] text-slate-300 capitalize leading-relaxed font-normal sm:text-xl xsm:text-lg">And you guess it right. This first drop will be on a FULL MOON.</motion.h1>
+                                </motion.div>
                             </div>
-                            <div className="basis-1/3 min-h-full h-full w-full flex justify-center items-center px-[50px] pt-[100px] aspect-square relative lg:hidden md:hidden sm:hidden xsm:hidden">
+                            <motion.div initial={{opacity: 0, scale: .95 }} animate={{opacity:1, scale: 1, transition:{ duration:.5, delay:.15, type:"tween"}}} className="basis-1/3 min-h-full h-full w-full flex justify-center items-center px-[50px] pt-[100px] aspect-square relative lg:hidden md:hidden sm:hidden xsm:hidden">
                                 <Image
                                     className="mx-auto"
                                     src={"/images/wolfOnBox.png"}
@@ -56,7 +68,7 @@ export default function streetwear() {
                                     alt="wolf on box image."
                                     priority
                                 />
-                            </div>
+                            </motion.div>
                         </div>
                     </section>
                     <Footer />
