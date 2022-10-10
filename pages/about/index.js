@@ -121,9 +121,9 @@ export default function About() {
 								<motion.h1 initial={{opacity: 0, y: 20,}} animate={{opacity: 1, y: 0, transition: { delay: .75, duration: .5, type: "spring", stiffness: 100, bounce: 1, damping: 8 } }} className="text-4xl text-slate-100 uppercase font-fjalla font-bold tracking-widest sm:text-3xl xsm:text-2xl">Holder Benefits</motion.h1>
 							</motion.div>
 							<div className="2xl:max-w-[1400px] xl:max-w-[1400px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
-								{card.map((cards) => {
+								{card.map((cards, ind) => {
 									return (
-										<div key={cards.cDly}>
+										<div key={ind}>
 
 										<AboutCard  prp={cards} />
 										</div>
