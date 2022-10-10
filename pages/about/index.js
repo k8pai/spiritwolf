@@ -7,7 +7,7 @@ import { useRef, useEffect } from "react";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
-import AboutCard from "../../components/aboutCard";
+import AboutCard from "../../components/AboutCard";
 import gsap from "gsap"
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
