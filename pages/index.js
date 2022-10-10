@@ -55,6 +55,7 @@ export default function Home() {
 											src={"/logo.png"}
 											height="44"
 											width="44"
+											alt="logo image."
 										/>
 									</Link></li>
 									<Link href='/about'><li className="nav-list mx-2 my-6 rounded-md uppercase opacity-70 text-slate-100 cursor-pointer font-normal tracking-widest text-sm flex items-center bg-[#210433] hover:opacity-100 transition duration-250"><span className="m-3 flex-1">About</span></li></Link>

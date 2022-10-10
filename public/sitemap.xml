@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://spiritwolf.io</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/about</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/about/fullmoon</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/about/marketplace</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/about/streetwear</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/mint</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/roadmap</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/shop</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://spiritwolf.io/team</loc><lastmod>2022-10-04T18:08:12.146Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-</urlset>
+        <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <sitemap><loc>https://spiritwolf.io/sitemap-0.xml</loc></sitemap>
+        </sitemapindex>

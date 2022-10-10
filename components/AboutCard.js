@@ -10,7 +10,7 @@ export default function AboutCard(props) {
     const abtHead = useRef(null);
     useEffect(() => {
         const el = abtHead.current;
-		gsap.fromTo(el, {opacity: 0, y:85},{opacity: 1, y:0, stagger: props.prp.cDly, duration: .6, scrollTrigger: { trigger: el, toggleActions: "restart none none none" }});
+		gsap.fromTo(el, {opacity: 0, y:85},{opacity: 1, y:0, duration: .6, scrollTrigger: { trigger: el, toggleActions: "restart none none none" }});
     }, [])
     return (
         <div className="group flex-col justify-center m-4 text-slate-50 xsm:max-w-[304px]" ref={abtHead}>

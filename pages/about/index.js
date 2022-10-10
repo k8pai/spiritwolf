@@ -123,7 +123,10 @@ export default function About() {
 							<div className="2xl:max-w-[1400px] xl:max-w-[1400px] lg:max-w-[400px] lg:flex-col md:max-w-[400px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex justify-center items-start flex-initial flex-wrap place-content-center place-items-center">
 								{card.map((cards) => {
 									return (
+										<div key={cards.cDly}>
+
 										<AboutCard  prp={cards} />
+										</div>
 									)
 								})}
 							</div>
