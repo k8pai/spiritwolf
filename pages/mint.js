@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function mint() {
     return (
@@ -36,16 +37,18 @@ export default function mint() {
                     <Header />
                     <section className="TeamsSection -z-0 relative w-[100%] min-h-full mx-auto flex justify-center items-start flex-initial flex-wrap">
                         <div className="2xl:max-w-[1200px] xl:max-w-[1200px] lg:max-w-[800px] md:max-w-[600px] md:flex-col sm:max-w-[400px] sm:flex-col xsm:max-w-[400px] xsm:flex-col mx-auto flex-col justify-center items-center">
-                            <Image
-                                src={"/images/worfWithMoon.png"}
-                                width="500"
-                                height="500"
-                                alt="wolf with moon image"
-                                priority
-                                loading="eager"
-                            />
+                            <motion.div initial={{opacity:0, scale:.90,}} animate={{opacity:1, scale:1, transition: {duration:.25,}}}>
+                                <Image
+                                    src={"/images/worfWithMoon.png"}
+                                    width="500"
+                                    height="500"
+                                    alt="wolf with moon image"
+                                    priority
+                                    loading="eager"
+                                />
+                            </motion.div>
                             <div className="flex justify-center items-center basis-1/4 pl-6">
-                                <h1 className="cmgsn font-fjalla text-6xl text-slate-100 tracking widest md:text-4xl sm:text-2xl xsm:text-xl">Coming Soon...</h1>
+                                <motion.h1 initial={{opacity:0,}} animate={{opacity:1, transition: {duration:.5,}}} className="cmgsn font-fjalla text-6xl text-slate-100 tracking widest md:text-4xl sm:text-2xl xsm:text-xl">Coming Soon...</motion.h1>
                             </div>
                         </div>
                     </section>
